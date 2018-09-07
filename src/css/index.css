@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
+  .wrap header {
+    width: 100%;
+    height: 88px;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    line-height: 44px; }
+    .wrap header p {
+      width: 100%;
+      height: 44px;
+      display: flex; }
+      .wrap header p input {
+        flex: 1;
+        height: 33px;
+        margin-top: 6px;
+        border: none;
+        padding-left: 20px; }
+      .wrap header p span {
+        width: 50px;
+        text-align: center;
+        color: ccc; }
+    .wrap header .ul {
+      width: 100%;
+      height: 44px;
+      display: flex; }
+      .wrap header .ul li {
+        width: 14.2%;
+        text-align: center; }
+  .wrap main {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column; }
+    .wrap main .top {
+      width: 100%;
+      height: 80px;
+      display: flex; }
+      .wrap main .top dl {
+        width: 20%; }
+        .wrap main .top dl dt {
+          width: 100%; }
+          .wrap main .top dl dt img {
+            width: 100%; }
+        .wrap main .top dl dd {
+          text-align: center;
+          line-height: 30px;
+          color: #f00; }
+    .wrap main .banner {
+      width: 100%;
+      height: 200px; }
+      .wrap main .banner img {
+        width: 100%;
+        height: 100%; }
+  .wrap footer {
+    width: 100%;
+    height: 44px;
+    background: #fcc; }

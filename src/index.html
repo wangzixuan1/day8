@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-4.3.3.min.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <p><span>背景</span><input type="text" placeholder="搜索商品名称"><span>我的</span></p>
+            <ul class="ul">
+                <li></li>
+            </ul>
+        </header>
+        <script id="li" type="text/x-handlebars-template">
+            {{#each tit}}
+            <li>{{this}}</li>
+            {{/each}}
+        </script>
+        <main>
+            <div class="top">
+
+            </div>
+            <script id='nav' type="text/x-handlebars-template">
+                {{#each this}}
+                <dl>
+                    <dt><img src="{{url}}" alt=""></dt>
+                    <dd>{{price}}</dd>
+                </dl>
+                {{/each}}
+            </script>
+            <div class="banner swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/30.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/45.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/30.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/45.jpg" alt=""></div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="./js/libs/require.js" data-main="./js/main.js"></script>
+</body>
+
+</html>
